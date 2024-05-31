@@ -1,23 +1,13 @@
 import copy
 import random
-
-from flask_mysqldb import MySQL
 from flask_cors import CORS
 from pretty_midi import pretty_midi
-
 from Escala import AcordesCmenor
 import Escala
-from Escala import CrearMidi
 from Escala import DarEscala
-import json
 from flask import Flask, render_template
 from flask import jsonify, request
 import pretty_midi
-import os
-from decouple import config as config_decouple
-from config import config
-from configuracion import configuracion
-
 
 def create_app(enviroment):
     app = Flask(__name__)
